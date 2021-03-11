@@ -8,7 +8,14 @@ Simple Contact Management Application with :
  * Firebase (Firestore)
  * Maerialize Css
  * Fontawesome
-***  
+***
+### Demo
+ * List of Contacts:
+ ![](/screens/1.png)
+ * Add a contact:
+ ![](/screens/2.png)
+ * Edit a contact (delete or update):
+ ![](/screens/3.png)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
