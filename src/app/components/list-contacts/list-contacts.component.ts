@@ -18,4 +18,8 @@ export class ListContactsComponent implements OnInit {
      })
   }
 
+  updateContact(contact) {
+    this.contactService.updateContact(contact);
+  }
+
 }

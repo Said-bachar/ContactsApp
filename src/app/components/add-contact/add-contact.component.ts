@@ -12,7 +12,7 @@ export class AddContactComponent implements OnInit {
   statusContact:boolean = false; 
   contact: Contact = {
     name:'',
-    phone: 0
+    phone: null
   }
   constructor(private contactService: ContactService) { }
 
@@ -21,6 +21,9 @@ export class AddContactComponent implements OnInit {
 
   newContact() {
     this.contactService.createContact(this.contact);
+    this.contact.name  = "";
+    this.contact.phone = null;
+    this.statusContact = false;
   }
 
 }
