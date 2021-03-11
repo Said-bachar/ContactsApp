@@ -21,7 +21,9 @@
                         <i class="fa fa-phone prefix"></i>
                         <input type="text" name="phone" [(ngModel)]="contact.phone">
                     </div>
+
                     <button class="btn orange" (click)="updateContact(contact)">Update</button>
+                    <button class="btn black" (click)="deleteContact(contact)">Delete</button>
                 </div>
             </div>
         </div>

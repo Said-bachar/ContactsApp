@@ -40,5 +40,10 @@ export class ContactService {
        this.contactDoc = this.contactsCollection.doc<Contact>(contact.id); // recupere the doc
        this.contactDoc.update(contact); // update an elt of the doc
     }
+
+    destroyContact(contact) {
+      this.contactDoc = this.contactsCollection.doc<Contact>(contact.id);
+       this.contactDoc.delete();
+    }
 }
 

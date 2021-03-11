@@ -31,4 +31,12 @@ export class ListContactsComponent implements OnInit {
     this.myContact = contact;
   }
 
+  deleteContact(contact) {
+    if(confirm('Are you sure to delete this contact?')) {
+    this.contactService.destroyContact(contact);
+    } else {
+      this.statusContact = false;
+    }
+  }
+
 }
