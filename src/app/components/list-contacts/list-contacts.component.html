@@ -1,0 +1,12 @@
+<app-add-contact></app-add-contact>
+<ul class="collection with-header" *ngIf="contacts?.length >0; else noContacts">
+    <li class="collection-item collection-header">
+        <h5>La liste des contacts</h5>
+    </li>
+    <li class="collection-item" *ngFor="let contact of contacts">
+        <strong>{{ contact.name }}</strong> {{ contact.phone }}
+    </li>
+</ul>
+<ng-template #noContacts>
+    <h5>La liste des contacts est vide !</h5>
+</ng-template>
