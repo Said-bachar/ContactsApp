@@ -7,8 +7,11 @@
         <div class="row">
             <div class="s12 col">
                 <strong>{{ contact.name }}</strong> {{ contact.phone }}
+                <button class="btn secondary-content waves-effect" (click)="editContact(contact)">
+                    <i class="fa fa-pencil"></i>
+                </button>
             </div>
-            <div class="s12 col">
+            <div class="s12 col" *ngIf="statusContact && contact.id == myContact.id">
                 <div class="row">
                     <div class="col s12 m6 input-field">
                         <i class="fa fa-user prefix"></i>
