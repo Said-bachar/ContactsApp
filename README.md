@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Simple Contact Management Application with : 
  * Angular11
  * Firebase (Firestore)
- * Maerialize Css
+ * Materialize Css
  * Fontawesome
 ***
 ### Demo
